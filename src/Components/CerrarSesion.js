@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 function CerrarSesion() {
   const cerrarSesion = () => {
-    localStorage.removeItem("token");
+    sessionStorage.removeItem("token");
     const Toast = Swal.mixin({
       toast: true,
       position: "top-end",
@@ -26,14 +26,14 @@ function CerrarSesion() {
     }, 1200);
   };
 
-  const token = localStorage.getItem("token");
+  const token = sessionStorage.getItem("token");
 
   return (
     <>
       {token && (
         <button
           type="button"
-          class="btn btn-dark btn-disabled"
+          className="btn btn-dark btn-disabled me-2"
           onClick={cerrarSesion}
         >
           Cerrar Sesion

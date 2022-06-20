@@ -12,6 +12,7 @@ function Header() {
               AlkeChallenge
             </Link>
             <button
+              id="navbarResponsive"
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -20,7 +21,10 @@ function Header() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span
+                className="navbar-toggler-icon"
+                id="navbarResponsive"
+              ></span>
             </button>
             <div className="collapse navbar-collapse " id="navbarNav">
               <ul className="navbar-nav ">

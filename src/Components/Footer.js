@@ -4,7 +4,7 @@ import "./footer.css";
 function Footer() {
   return (
     <>
-      <footer className="footer-container">
+      <footer className="footer">
         <nav>
           <ul>
             <li className="social">

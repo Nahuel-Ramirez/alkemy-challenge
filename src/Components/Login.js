@@ -76,9 +76,11 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         const tokenRecibido = res.data.token;
-        localStorage.setItem("token", tokenRecibido);
-        irListado();
-        window.location.reload();
+        sessionStorage.setItem("token", tokenRecibido);
+        setTimeout(() => {
+          irListado();
+          window.location.reload();
+        }, 2000);
       });
   };
 
