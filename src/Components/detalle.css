@@ -1,0 +1,56 @@
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 20px;
+
+  box-shadow: 5px 5px 30px 2px;
+}
+
+.body-detail {
+  max-width: 60%;
+}
+
+.overview {
+  text-align: center;
+}
+
+.overview-data {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.data-movie {
+  text-align: start;
+  padding: 10px;
+  margin: 10px;
+}
+
+.gen {
+  list-style: none;
+  display: inline;
+  padding: 2px;
+}
+
+.divider {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+  border-bottom: 1px solid gray;
+}
+
+.divider-black {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-hp {
+  text-decoration: none;
+}
