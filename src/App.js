@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Listado from "./Components/Listado";
 import Login from "./Components/Login";
+import Resultados from "./Components/Resultados";
 
 // Styles
 import "./css/bootstrap.min.css";
@@ -21,6 +22,7 @@ function App() {
           <Route index element={<Login />} />
           <Route path="/listado" element={<Listado />} />
           <Route path="/detalle" element={<Detalle />} />
+          <Route path="/resultados" element={<Resultados />} />
         </Routes>
       </div>
 

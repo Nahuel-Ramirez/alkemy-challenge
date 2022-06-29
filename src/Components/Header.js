@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CerrarSesion from "./CerrarSesion";
 
+//Components
+import Buscador from "./Buscador";
+
 function Header() {
   return (
     <>
@@ -58,6 +61,7 @@ function Header() {
                 </li>
               </ul>
             </div>
+            <Buscador />
           </div>
         </nav>
       </header>

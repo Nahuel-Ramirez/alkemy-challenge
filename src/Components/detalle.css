@@ -23,7 +23,7 @@
 .data-movie {
   text-align: start;
   padding: 10px;
-  margin: 10px;
+  margin-top: 20px;
 }
 
 .gen {
@@ -43,7 +43,8 @@
   margin-top: 20px;
   margin-bottom: 20px;
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 6px solid #000;
+  border-radius: 50%;
 }
 
 .home-page {

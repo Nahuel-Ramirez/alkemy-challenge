@@ -3,13 +3,12 @@ import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 // Material UI
-import Container from "@mui/material/Container";
+
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
 import { grey } from "@mui/material/colors";
 
 // Style
@@ -86,16 +85,18 @@ function Detalle() {
             </CardContent>
 
             <CardActions className="home-page">
-              <Button variant="outlined" sx={{ color: grey[900] }}>
-                <a
-                  href={movieDetail.homepage}
-                  target="_BLANK"
-                  rel="noreferrer"
-                  className="btn-hp"
-                >
-                  Home Page
-                </a>
-              </Button>
+              {movieDetail.homepage && (
+                <Button variant="outlined" sx={{ color: grey[900] }}>
+                  <a
+                    href={movieDetail.homepage}
+                    target="_BLANK"
+                    rel="noreferrer"
+                    className="btn-hp"
+                  >
+                    Home Page
+                  </a>
+                </Button>
+              )}
               <Button variant="outlined" sx={{ color: grey[900] }}>
                 <Link to="/listado" className="btn-hp">
                   Volver al listado
