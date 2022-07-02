@@ -31,7 +31,16 @@ function Resultados() {
       });
   }, [keyword, navigate]);
 
-  console.log(moviesResults);
+  useEffect(() => {
+    let token = sessionStorage.getItem("token");
+    if (token === null) {
+      Swal.fire({
+        text: "¡Necesitas loguearte primero!",
+        icon: "error",
+      });
+      navigate("/");
+    }
+  }, [navigate]);
 
   return (
     <>

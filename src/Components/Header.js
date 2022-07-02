@@ -6,6 +6,8 @@ import CerrarSesion from "./CerrarSesion";
 import Buscador from "./Buscador";
 
 function Header() {
+  const token = sessionStorage.getItem("token");
+
   return (
     <>
       <header>
@@ -31,15 +33,17 @@ function Header() {
             </button>
             <div className="collapse navbar-collapse " id="navbarNav">
               <ul className="navbar-nav ">
-                <li className="nav-item">
-                  <Link
-                    className="nav-link text-light btn btn-dark"
-                    aria-current="page"
-                    to="/"
-                  >
-                    Home
-                  </Link>
-                </li>
+                {!token && (
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link text-light btn btn-dark"
+                      aria-current="page"
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                )}
                 <li className="nav-item">
                   <Link
                     className="nav-link text-light btn btn-dark"
